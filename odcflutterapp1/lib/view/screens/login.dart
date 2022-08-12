@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:odcflutterapp1/register.dart';
+import 'package:odcflutterapp1/view/screens/Tv_catalog.dart';
+import 'package:odcflutterapp1/view/screens/register.dart';
 import 'package:wave/config.dart';
 import 'package:wave/wave.dart';
 
@@ -127,7 +128,10 @@ class Login extends StatelessWidget {
                   ),
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => TvCatalog()));
+                  },
                   style: ElevatedButton.styleFrom(
                       padding: EdgeInsets.zero,
                       shape: RoundedRectangleBorder(
