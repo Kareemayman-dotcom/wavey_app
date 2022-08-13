@@ -40,11 +40,11 @@ class TvCatalog extends StatelessWidget {
         leadingWidth: 150,
         // flexibleSpace: ,
         // toolbarOpacity: 2,
-        actions:  [
+        actions: [
           GestureDetector(
             onTap: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => CartScreen()));
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (context) => CartScreen()));
             },
             child: Padding(
                 padding: EdgeInsets.only(
