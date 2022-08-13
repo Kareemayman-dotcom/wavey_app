@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:odcflutterapp1/controller/counter_provider.dart';
 import 'package:odcflutterapp1/model/global.dart';
 import 'package:odcflutterapp1/model/tv.dart';
+import 'package:odcflutterapp1/view/screens/cart.dart';
 import 'package:odcflutterapp1/view/screens/login.dart';
 import 'package:odcflutterapp1/view/screens/product_screen.dart';
 
@@ -38,16 +40,22 @@ class TvCatalog extends StatelessWidget {
         leadingWidth: 150,
         // flexibleSpace: ,
         // toolbarOpacity: 2,
-        actions: const [
-          Padding(
-              padding: EdgeInsets.only(
-                top: 15,
-                right: 15,
-              ),
-              child: Icon(
-                Icons.shopping_cart,
-                color: Colors.grey,
-              )),
+        actions:  [
+          GestureDetector(
+            onTap: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => CartScreen()));
+            },
+            child: Padding(
+                padding: EdgeInsets.only(
+                  top: 15,
+                  right: 15,
+                ),
+                child: Icon(
+                  Icons.shopping_cart,
+                  color: Colors.grey,
+                )),
+          ),
         ],
       ),
       body: Padding(
@@ -66,6 +74,7 @@ class TvCatalog extends StatelessWidget {
           itemBuilder: (BuildContext context, int index) {
             return GestureDetector(
               onTap: () {
+                // CounterProvider.counter = 0;
                 Navigator.of(context).push(MaterialPageRoute(
                     builder: (context) => ProductScreen(index: index)));
               },

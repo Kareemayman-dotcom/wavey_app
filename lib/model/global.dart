@@ -1,7 +1,6 @@
 import 'package:odcflutterapp1/model/tv.dart';
 
-List<Tv> cart = [
-];
+List<Tv> cart = [];
 List<Tv> tvs = [
   Tv(
       imageAddress:

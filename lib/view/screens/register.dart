@@ -105,20 +105,20 @@ class Register extends StatelessWidget {
                         boxShadow: [
                           BoxShadow(
                               color: Colors.grey.withAlpha(50),
-                              offset: Offset(0, 10),
+                              offset: const Offset(0, 10),
                               blurRadius: 10,
                               spreadRadius: 3)
                         ]),
-                    margin: EdgeInsets.only(
+                    margin: const EdgeInsets.only(
                       left: 15,
                       right: 15,
                       bottom: 20,
                     ),
-                    padding: EdgeInsets.only(left: 20),
+                    padding: const EdgeInsets.only(left: 20),
                     // color: Colors.grey,
                     child: TextFormField(
                       controller: emailController,
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                           border: InputBorder.none, hintText: "Email"),
                     ),
                   ),
@@ -129,22 +129,22 @@ class Register extends StatelessWidget {
                         boxShadow: [
                           BoxShadow(
                               color: Colors.grey.withAlpha(20),
-                              offset: Offset(0, 10),
+                              offset: const Offset(0, 10),
                               blurRadius: 10,
                               spreadRadius: 3)
                         ]),
-                    margin: EdgeInsets.only(
+                    margin: const EdgeInsets.only(
                       left: 15,
                       right: 15,
                       bottom: 20,
                     ),
-                    padding: EdgeInsets.only(left: 17),
+                    padding: const EdgeInsets.only(left: 17),
                     // color: Colors.grey,
                     child: TextFormField(
                       controller: passwordController,
                       obscureText: true,
-                      decoration: InputDecoration(
-                          hintStyle: TextStyle(
+                      decoration: const InputDecoration(
+                          hintStyle: const TextStyle(
                             fontSize: 17,
                           ),
                           border: InputBorder.none,
@@ -158,21 +158,21 @@ class Register extends StatelessWidget {
                         boxShadow: [
                           BoxShadow(
                               color: Colors.grey.withAlpha(20),
-                              offset: Offset(0, 10),
+                              offset: const Offset(0, 10),
                               blurRadius: 10,
                               spreadRadius: 3)
                         ]),
-                    margin: EdgeInsets.only(
+                    margin: const EdgeInsets.only(
                       left: 15,
                       right: 15,
                       bottom: 20,
                     ),
-                    padding: EdgeInsets.only(left: 17),
+                    padding: const EdgeInsets.only(left: 17),
                     // color: Colors.grey,
                     child: TextFormField(
                       obscureText: true,
-                      decoration: InputDecoration(
-                          hintStyle: TextStyle(
+                      decoration: const InputDecoration(
+                          hintStyle: const TextStyle(
                             fontSize: 17,
                           ),
                           border: InputBorder.none,
@@ -186,22 +186,22 @@ class Register extends StatelessWidget {
                         boxShadow: [
                           BoxShadow(
                               color: Colors.grey.withAlpha(20),
-                              offset: Offset(0, 10),
+                              offset: const Offset(0, 10),
                               blurRadius: 10,
                               spreadRadius: 3)
                         ]),
-                    margin: EdgeInsets.only(
+                    margin: const EdgeInsets.only(
                       left: 15,
                       right: 15,
                       bottom: 20,
                     ),
-                    padding: EdgeInsets.only(left: 17),
+                    padding: const EdgeInsets.only(left: 17),
                     // color: Colors.grey,
                     child: TextFormField(
                       // obscureText: true,
                       keyboardType: TextInputType.phone,
-                      decoration: InputDecoration(
-                          hintStyle: TextStyle(
+                      decoration: const InputDecoration(
+                          hintStyle: const TextStyle(
                             fontSize: 17,
                           ),
                           border: InputBorder.none,
@@ -222,10 +222,10 @@ class Register extends StatelessWidget {
                         )),
                     child: Ink(
                       decoration: BoxDecoration(
-                          gradient: LinearGradient(
+                          gradient: const LinearGradient(
                             colors: [
-                              Color(0xffea5282),
-                              Color(0xffd1152a),
+                              const Color(0xffea5282),
+                              const Color(0xffd1152a),
                             ],
                           ),
                           borderRadius: BorderRadius.circular(50)),
@@ -233,7 +233,7 @@ class Register extends StatelessWidget {
                         width: 190,
                         height: 50,
                         alignment: Alignment.center,
-                        child: Text(
+                        child: const Text(
                           "Sign up",
                           style: TextStyle(
                             fontSize: 19,
@@ -243,16 +243,16 @@ class Register extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      Text(
+                      const Text(
                         "Already have an account? ",
                         style: TextStyle(
-                          color: Color(0xffb8b8b9),
+                          color: const Color(0xffb8b8b9),
                           fontSize: 14,
                           fontWeight: FontWeight.w600,
                         ),
@@ -262,8 +262,8 @@ class Register extends StatelessWidget {
                           Navigator.of(context).push(
                               MaterialPageRoute(builder: (context) => Login()));
                         },
-                        child: Text("Login",
-                            style: TextStyle(
+                        child: const Text("Login",
+                            style:  TextStyle(
                               color: Color(0xffd1152a),
                               fontSize: 14,
                               fontWeight: FontWeight.w600,
