@@ -119,7 +119,19 @@ class CartScreen extends StatelessWidget {
               ),
             ),
           ),
-          TextButton(onPressed: () {}, child: Text("$totalOrder"))
+          TextButton(
+              onPressed: () {},
+              style: TextButton.styleFrom(
+                  backgroundColor: Colors.redAccent,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30),
+                  )),
+              child: Text(
+                "Total : $totalOrder",
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              )),
         ]),
       );
     }
